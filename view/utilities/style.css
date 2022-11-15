@@ -1,0 +1,24 @@
+.container h1 {
+    text-align: center;
+}
+
+.navbar {
+    background-color: #292C30 !important;
+    box-shadow: 0px 4px 0px 0px rgba(79,79,79,0.42)
+}
+
+.logo {
+    padding-left: 5px;
+    height: 70px;
+    width: 85px;
+}
+
+.btn-login {
+    font-weight: bold;
+    background-color: #161718;
+    padding: 8px 10px 8px 10px;
+    color: #ffff;
+    border: 1px solid #161718;
+    border-radius: 5px;
+    box-shadow: 0px 0px 28px -1px rgba(79,79,79,1);
+}
