@@ -1,10 +1,15 @@
+body {
+    background-color: rgb(36, 38, 39);
+}
 .container h1 {
+    padding-top: 40px;
     text-align: center;
+    color: white;
 }
 
 .navbar {
     background-color: #292C30 !important;
-    box-shadow: 0px 4px 0px 0px rgba(79,79,79,0.42)
+    box-shadow: 0px 3px 3px 0px rgba(79, 79, 79, 0.42)
 }
 
 .logo {
@@ -13,6 +18,9 @@
     width: 85px;
 }
 
+#navbarSupportedContent {
+    padding: 0px 60px 0px 60px;
+}
 .btn-login {
     font-weight: bold;
     background-color: #161718;

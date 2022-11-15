@@ -9,7 +9,7 @@ function myFunction(){
         confirmButtonText: 'Login',
         showLoaderOnConfirm: true,
         preConfirm: (login) => {
-          return fetch(`//api.roblox.com/users/get-by-username/${login}`)
+          return fetch(`//api.github.com/users/${login}`)
             .then(response => {
               if (!response.ok) {
                 throw new Error(response.statusText)
@@ -23,12 +23,12 @@ function myFunction(){
             })
         },
         allowOutsideClick: () => !Swal.isLoading()
-       })//.then((result) => {
-      //   if (result.isConfirmed) {
-      //     Swal.fire({
-      //       title: `${result.value.login}'s avatar`,
-      //       imageUrl: result.value.avatar_url
-      //     })
-      //   }
-      // })
+       }).then((result) => {
+         if (result.isConfirmed) {
+           Swal.fire({
+             title: `${result.value.login}'s avatar`,
+             imageUrl: result.value.avatar_url
+           })
+         }
+       })
 }
